@@ -31,6 +31,8 @@
             menuStrip1 = new MenuStrip();
             menuDeUsuariosToolStripMenuItem = new ToolStripMenuItem();
             usariosToolStripMenuItem = new ToolStripMenuItem();
+            divisasToolStripMenuItem = new ToolStripMenuItem();
+            fibonacciToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -46,7 +48,7 @@
             // 
             // menuDeUsuariosToolStripMenuItem
             // 
-            menuDeUsuariosToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { usariosToolStripMenuItem });
+            menuDeUsuariosToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { usariosToolStripMenuItem, divisasToolStripMenuItem, fibonacciToolStripMenuItem });
             menuDeUsuariosToolStripMenuItem.Name = "menuDeUsuariosToolStripMenuItem";
             menuDeUsuariosToolStripMenuItem.Size = new Size(108, 29);
             menuDeUsuariosToolStripMenuItem.Text = "opcciones";
@@ -57,6 +59,20 @@
             usariosToolStripMenuItem.Size = new Size(270, 34);
             usariosToolStripMenuItem.Text = "usarios";
             usariosToolStripMenuItem.Click += usariosToolStripMenuItem_Click;
+            // 
+            // divisasToolStripMenuItem
+            // 
+            divisasToolStripMenuItem.Name = "divisasToolStripMenuItem";
+            divisasToolStripMenuItem.Size = new Size(270, 34);
+            divisasToolStripMenuItem.Text = "divisas";
+            divisasToolStripMenuItem.Click += divisasToolStripMenuItem_Click;
+            // 
+            // fibonacciToolStripMenuItem
+            // 
+            fibonacciToolStripMenuItem.Name = "fibonacciToolStripMenuItem";
+            fibonacciToolStripMenuItem.Size = new Size(270, 34);
+            fibonacciToolStripMenuItem.Text = "fibonacci";
+            fibonacciToolStripMenuItem.Click += fibonacciToolStripMenuItem_Click;
             // 
             // Form1
             // 
@@ -79,5 +95,7 @@
         private MenuStrip menuStrip1;
         private ToolStripMenuItem menuDeUsuariosToolStripMenuItem;
         private ToolStripMenuItem usariosToolStripMenuItem;
+        private ToolStripMenuItem divisasToolStripMenuItem;
+        private ToolStripMenuItem fibonacciToolStripMenuItem;
     }
 }
